@@ -22,6 +22,7 @@ RUN . venv/bin/activate
 
 COPY . .
 
-EXPOSE 8081
-CMD [ "waitress-serve", "--port=8081", "app:app"]
+EXPOSE 3310
+#CMD [ "waitress-serve", "--port=8081", "app:app"]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0"]
 
