@@ -24,5 +24,5 @@ COPY . .
 
 EXPOSE 3310
 #CMD [ "waitress-serve", "--port=8081", "app:app"]
-CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0"]
+CMD [ "python", "-m", "run", "--host=0.0.0.0"]
 
